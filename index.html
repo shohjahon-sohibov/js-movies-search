@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>movies-search-homework-40</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-light">
+  <main class="py-5">
+
+    <div class="container">
+    
+      <h1 class="mb-4 h2 text-center">movies</h1>
+
+      <form class="input-group mb-3 js-form" method="POST">
+        <input type="text" class="form-control js-search-input" placeholder="Write film name" aria-label="Write film name" aria-describedby="basic-addon2">
+        <span class="input-group-text" id="basic-addon2">search</span>
+          <ul class="result-list">
+            
+          </ul>
+      </form>
+      
+      <ul class="row list-unstyled d-flex justify-content-around movies">
+        
+      </ul>
+    </div>
+  </main>
+  
+  <template id="movies-card-template">
+    
+      <li class="card col-3 mb-3" style="width: 17rem;">
+        <img src="" class="card-img-top js-movie-img" alt="">
+        <div class="card-body">
+          <h5 class="card-title js-movie-title"></h5>
+          <p class="card-text js-movie-year"></p>
+          <p class="card-text js-movie-categories"></p>
+          <a class="card-text text-black js-movie-you-tube-id" href="https://www.youtube.com/watch?v=rFhrdwQ9-zQ" target="_blank"></a>
+        </li>
+    </li>
+    
+  </template>
+  
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/movies.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="./js/scritp.js"></script>
+</body>
+</html>
